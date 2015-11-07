@@ -1,0 +1,24 @@
+,
+
+附件中是两个语言文件，是纯文本，可以使用txt打开。需要翻译的语句是所有带等号的句子，即key=word，例如：
+
+permission.type.singular = Permission
+permission.type.plural = Permissions
+
+需要Python具备：
+
+	-能够识别key，提取word，然后允许输入汉字，将汉字自动转换为unicode后在相同的位置将word换成unicode。
+	-某些提取的key值不需翻译，则允许输入特殊字符跳过。（或其他手段）。
+	-按照以下格式生成一份text或者excel文件，怎么简单怎么来。
+		key0 word0 中文翻译0 unicode0
+		key1 word1 中文翻译1 unicode1
+		。。。。。。。。。。。。。。
+	        。。。。。。。。。。。。。。
+
+另外，如果可以实现，
+
+-从新打开时需要能允许从上次修改的位置开始，或者允许输入某个key，然后从该key开始。
+
+拜谢！
+
+志超
